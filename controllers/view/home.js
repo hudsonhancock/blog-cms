@@ -4,9 +4,11 @@ const { Post, User } = require("../../models");
 router.get("/", async (req, res) => {
   const userId = 1;
 
+  console.log(User, "line 7 in home.js");
+
   try {
     const postData = await Post.findAll({
-      include: [User],
+      // include: [User],
     });
 
     const blogs = postData.map((post) => {

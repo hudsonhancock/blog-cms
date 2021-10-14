@@ -17,3 +17,5 @@ router.use("/api/blogs", apiBlogRoutes);
 router.use("/api/comments", apiCommentRoutes);
 
 module.exports = router;
+
+// location, route handler
